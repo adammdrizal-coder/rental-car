@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Home</title>
+</head>
+<body class="bg-black text-neutral-200">
+
+
+    <div class="container max-w-full min-h-screen">
+
+            <header class="bg-black text-neutral-200 p-3 pt-6 text-md">
+        <nav>
+            <div class="navbar flex justify-around">
+
+                <span class="cursor-pointer"><img src="/images/logo.png" alt="" width="130"></span>
+
+                <ul class="lg:flex space-x-10 hidden">
+                    <li><a href="/index.html" class="active text-teal-300">Home</a></li>
+                    <li><a href="/cars.html" class="hover:text-neutral-300">Cars</a></li>
+                    <li><a href="/rental.html" class="hover:text-neutral-300">Rental Packages</a></li>
+                    <li><a href="/about.html" class="hover:text-neutral-300">About</a></li>
+                    <li><a href="/contact.html" class="hover:text-neutral-300">Contact</a></li>
+                </ul>
+
+                <span>
+                    
+                    <button class="p-1 px-3 rounded-md bg-neutral-900"><a href="#"><i class="fa fa-user-plus mr-2" aria-hidden="true"></i>Login</a></button>
+                    <button class="border p-1 px-5 rounded-md bg-teal-300 text-black font-semibold"><a href="#">Register</a></button>
+                
+                </span>
+
+            </div>
+        </nav>
+        </header>
+
+        <div class="child-container max-w-full min-h-screen m-auto flex">
+        <div class="textContent w-full md:w-1/2 h-screen flex justify-center items-center">
+            <div class="wrap w-105">
+
+                <h2 class="text-teal-300 font-bold text-5xl">Luxury <span class="text-white">on</span><br> Demand</h2>
+                <p class="mt-5 mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+                <div class="search bg-neutral-800 p-5 py-15 rounded-xl">
+                    <div class="form flex space-x-3">
+                        <div class="left">
+                            <h3 class="pb-2">Pick-up Location</h3>
+                            <input type="text" name="" class="rounded-sm mb-3 bg-neutral-700">
+
+                            <h3 class="pb-2">Pick-up Date</h3>
+                            <input type="date" name="" class="rounded-sm mb-5 bg-neutral-700 w-full">
+                        </div>
+                        <div class="right">
+                            <h3 class="pb-2">Drop-off Location</h3>
+                            <input type="text" name="" class="rounded-sm mb-3 bg-neutral-700">
+
+                            <h3 class="pb-2">Return Date</h3>
+                            <input type="date" name="" class="rounded-sm mb-5 bg-neutral-700 w-full">
+                        </div>
+                    </div>
+                    <button type="submit" class="border border-teal-300 px-36 py-1 rounded-md cursor-pointer hover:bg-teal-300 hover:text-black">Search Cars</button>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="image-wrapper w-1/2 hidden md:block">
+            <img src="/images/home-ferrari.png" alt="home-ferrari" class="h-screen w-full">
+       </div>
+        </div>
+    </div>
+
+    <div class="second-container max-w-full min-h-screen flex bg-neutral-800 flex-col justify-center">
+
+        <h1 class="text-5xl font-semibold text-center relative bottom-20">Why Choose Us</h1>
+
+        <div class="box flex justify-center space-x-10">
+            <div class="box-1 w-1/5 bg-neutral-700 p-10 rounded-xl">
+
+                <h2 class="text-2xl font-semibold text-center pb-5">Wide Selection of Cars</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi.</p>
+                
+            </div>
+
+            <div class="box-2 w-1/5 bg-neutral-700 p-10 rounded-xl">
+
+                <h2 class="text-2xl font-semibold text-center pb-5">Affordable Prices</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi.</p>
+
+            </div>
+
+            <div class="box-3 w-1/5 bg-neutral-700 p-10 rounded-xl">
+
+                <h2 class="text-2xl font-semibold text-center pb-5">24/7 Premium Support</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-third max-w-full min-h-screen flex flex-col justify-center items-center">
+        
+        <h1 class="text-5xl font-semibold text-center relative bottom-20">Popular Cars</h1>
+
+          <div class="car-box flex justify-center space-x-10">
+            <div class="box-1 w-1/5 bg-neutral-700 rounded-xl hover:scale-105 ease-in-out duration-75">
+
+                <div class="image-card"><img src="/images/merc-card.png" alt="" class="rounded-xl"></div>
+                <div class="details p-10">
+                    <!-- <h2 class="text-2xl font-semibold text-center pb-5">Wide Selection of Cars</h2> -->
+                    <p class="">Automatic, 4 Seats, GPS Navigation, Bluetooth Connectivity</p>
+                    <h2 class="pt-5 text-xl font-semibold">$120<span class="text-lg font-normal">/day</span></h2>
+
+                <div class="button w-full flex flex-col ">
+                    <button class="mt-2 py-1 border-2 border-teal-300 rounded-md cursor-pointer hover:bg-teal-300 hover:text-black"><a href="">Book Now</a></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="box-2 w-1/5 bg-neutral-700 rounded-xl hover:scale-105 ease-in-out duration-75">
+
+                <div class="image-card"><img src="/images/x5-card.png" alt="" class="rounded-xl"></div>
+                <div class="details p-10">
+                    <!-- <h2 class="text-2xl font-semibold text-center pb-5">Affordable Prices</h2> -->
+                    <p class="">Automatic, 5 Seats, All-Wheel Drive, Panoramic Sunroof, Advanced Safety</p>
+                    <h2 class="pt-5 text-xl font-semibold">$180<span class="text-lg font-normal">/day</span></h2>
+                
+                <div class="button w-full flex flex-col ">
+                    <button class="mt-2 py-1 border-2 border-teal-300 rounded-md cursor-pointer hover:bg-teal-300 hover:text-black"><a href="">Book Now</a></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="box-3 w-1/5 bg-neutral-700 rounded-xl hover:scale-105 ease-in-out duration-75">
+
+                <div class="image-card"><img src="/images/a4-card.png" alt="" class="rounded-xl"></div>
+                <div class="details p-10">
+                    <!-- <h2 class="text-2xl font-semibold text-center pb-5">24/7 Premium Support</h2> -->
+                    <p class="">Automatic, 4 Seats, Sport Mode, Premium Sound System, Leather Interior</p>
+                    <h2 class="pt-5 text-xl font-semibold">$100<span class="text-lg font-normal">/day</span></h2>
+                
+                <div class="button w-full flex flex-col ">
+                    <button class="mt-2 py-1 border-2 border-teal-300 rounded-md cursor-pointer hover:bg-teal-300 hover:text-black"><a href="">Book Now</a></button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

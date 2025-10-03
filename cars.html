@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Cars</title>
+</head>
+<body>
+
+    <div class="container max-w-full min-h-screen">
+        <header class="bg-black text-neutral-200 p-3 pt-6 text-md">
+            <nav>
+                <div class="navbar flex justify-around">
+
+                    <span class="cursor-pointer"><img src="/images/logo.png" alt="" width="130"></span>
+
+                    <ul class="lg:flex space-x-10 hidden">
+                        <li><a href="/index.html" class="hover:text-neutral-300">Home</a></li>
+                        <li><a href="/cars.html" class="active text-teal-300">Cars</a></li>
+                        <li><a href="/rental.html" class="hover:text-neutral-300">Rental Packages</a></li>
+                        <li><a href="/about.html" class="hover:text-neutral-300">About</a></li>
+                        <li><a href="/contact.html" class="hover:text-neutral-300">Contact</a></li>
+                    </ul>
+
+                    <span>
+                        
+                        <button class="p-1 px-3 rounded-md bg-neutral-900"><a href="#"><i class="fa fa-user-plus mr-2" aria-hidden="true"></i>Login</a></button>
+                        <button class="border p-1 px-5 rounded-md bg-teal-300 text-black font-semibold"><a href="#">Register</a></button>
+                    
+                    </span>
+
+                </div>
+            </nav>
+            </header>
+
+                <div class="rectangle bg-[url('/images/cars-page.png')] bg-cover bg-no-repeat max-w-full min-h-screen flex justify-center">
+                    <h1 class="text-white text-5xl font-semibold my-80">Explore Our Cars</h1>
+                </div>
+                
+            </div>
+
+
+        <div class="container-car max-w-full min-h-screen bg-black text-white flex flex-col">
+            <div class="cards-car grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-2 gap-15 items-center m-auto p-20">
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/merc-classc.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">Mercedes-Benz C-Class</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">5 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Automatic</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$180<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/bmw-x5.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">BMW X5</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">5 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Automatic</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$250<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/audi-etron.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">Audi E-Tron</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">5 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Automatic</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$220<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/tesla-models.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">Tesla Model S</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">5 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Automatic</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$280<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/porsche.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">Porsche 911</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">2 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Manual</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$350<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+
+                <div class="cars-1 w-80 bg-neutral-800 rounded-xl hover:scale-105 ease-in-out duration-[0.5]">
+                    
+                    <img src="/images/range.png" alt="" class="w-full rounded-tl-xl rounded-tr-xl">
+
+                    <div class="text-image p-3">
+                    <h1 class="text-2xl font-bold">Range Rover Velar</h1>
+                    <div class="menu flex space-x-2 my-3">
+                        <p class="bg-neutral-700 px-5 rounded-xl">5 Seats</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">GPS</p>
+                        <p class="bg-neutral-700 px-5 rounded-xl">Automatic</p>
+                    </div>
+
+                    <h2 class="text-teal-300 text-xl font-semibold my-3">$300<span class="text-sm font-normal text-white">/day</span></h2>
+                    <button class="w-full p-2 bg-teal-300 rounded-xl"><a href="#" class="text-black">Book Now</a></button>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    
+</body>
+</html>

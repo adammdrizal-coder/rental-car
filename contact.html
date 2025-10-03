@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact</title>
+</head>
+<body>
+    
+    <div class="container max-w-full min-h-screen bg-black text-white">
+        <header class="bg-black text-neutral-200 p-3 pt-6 text-md">
+            <nav>
+                <div class="navbar flex justify-around">
+
+                    <span class="cursor-pointer"><img src="/images/logo.png" alt="" width="130"></span>
+
+                    <ul class="lg:flex space-x-10 hidden">
+                        <li><a href="/index.html" class="hover:text-neutral-300">Home</a></li>
+                        <li><a href="/cars.html" class="hover:text-neutral-300">Cars</a></li>
+                        <li><a href="/rental.html" class="hover:text-neutral-300">Rental Packages</a></li>
+                        <li><a href="/about.html" class="hover:text-neutral-300">About</a></li>
+                        <li><a href="/contact.html" class="active text-teal-300">Contact</a></li>
+                    </ul>
+
+                    <span>
+                        
+                        <button class="p-1 px-3 rounded-md bg-neutral-900"><a href="#"><i class="fa fa-user-plus mr-2" aria-hidden="true"></i>Login</a></button>
+                        <button class="border p-1 px-5 rounded-md bg-teal-300 text-black font-semibold"><a href="#">Register</a></button>
+                    
+                    </span>
+
+                </div>
+            </nav>
+            </header>
+
+            <div class="items-container flex justify-around items-center max-w-full min-h-150">
+                <div class="items-left w-1/2 flex flex-col justify-center items-center ml-30">
+
+                    <h1 class="text-4xl font-bold w-120">Get in Touch With Us</h1>
+                    <p class="w-120 py-5">We'd love to hear from you! Whether you have a question about our services, need support, or just want to provide feedback, our team is ready to assist you. Reach out through the form or direct contact methods below.</p>
+
+                </div>
+
+                <div class="items-right w-1/2 flex items-center justify-center mr-30">
+
+                    <img src="/images/contact.png" alt="" class="w-100 rounded-xl">
+
+                </div>
+            </div>
+
+            </div>
+
+            <div class="form-contact max-w-full min-h-screen bg-black text-white flex flex-col justify-center">
+                <main class="grid grid-cols-2 grid-rows-3">
+                    <article class="bg-neutral-800 w-180 p-10 rounded-xl flex flex-col justify-center row-span-3 mx-30">
+                        <h1 class="text-3xl font-bold py-1">Send Us a Message</h1>
+                        <p class="pb-5">Fill Out the form below and we will get back to you as soon as possible.</p>
+
+                        <form action="" class="pb-3">
+
+                            <label for="Name">Name</label>
+                            <br>
+                            <input type="text" name="" id="" placeholder="Your Full Name" class="mt-2 w-full bg-neutral-700 p-2 rounded-xl">
+
+                        </form>
+
+                        <form action="" class="pb-3">
+
+                            <label for="Name">Email</label>
+                            <br>
+                            <input type="text" name="" id="" placeholder="you@example.com" class="mt-2 w-full bg-neutral-700 p-2 rounded-xl">
+
+                        </form>
+
+                        <form action="" class="pb-3">
+
+                            <label for="Name">Subject</label>
+                            <br>
+                            <input type="text" name="" id="" placeholder="Topic of your inquiry" class="mt-2 w-full bg-neutral-700 p-2 rounded-xl">
+
+                        </form>
+
+                        <form action="" class="pb-3">
+
+                            <label for="Name">Message</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Type your message here..." class="mt-2 w-full bg-neutral-700 p-2 rounded-xl"></textarea>
+
+                        </form>
+
+                        <br>
+
+                        <button class="bg-teal-300 p-1 rounded-xl"><a href="#" class="text-black font-semibold">Submit</a></button>
+                    </article>
+                   
+                    <article class="bg-neutral-800 h-40 w-95 p-5 rounded-xl mx-35">
+                        <h1 class="text-xl font-semibold">Phone Support</h1>
+                        <p class="w-90 py-3">Our Support team is Available during business hours to assist you.</p>
+
+                        <h2 class="text-lg font-semibold">+1 (800) 123-4567</h2>
+                    </article>
+                    <article class="bg-neutral-800 h-40 w-95 p-5 rounded-xl mx-35">
+                        <h1 class="text-xl font-semibold">Email Support</h1>
+                        <p class="w-90 py-3">Our Support team is Available during business hours to assist you.</p>
+
+                        <h2 class="text-lg font-semibold">+1 (800) 123-4567</h2>
+                    </article>
+                    <article class="bg-neutral-800 h-60 w-95 p-5 rounded-xl mx-35">
+                        <h1 class="text-xl font-semibold">Office Location</h1>
+                        <p class="w-90 py-3">Visit our main office during business hours for in-person assistance.</p>
+
+                        <h2 class="text-lg font-semibold">123 Global Street, Suite 200, Innovation City, GX 98765</h2>
+                    </article>
+                </main>
+            </div>
+
+</body>
+</html>
