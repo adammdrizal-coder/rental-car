@@ -31,14 +31,14 @@
                     $mail->isSMTP();
                     $mail->Host       = 'smtp.gmail.com';
                     $mail->SMTPAuth   = true;
-                    $mail->Username   = 'adamrizal.dev@gmail.com';
-                    $mail->Password   = 'bzpu xpyt kqju juag';     
+                    $mail->Username   = 'your@gmail';
+                    $mail->Password   = 'yourpass';     
                     $mail->SMTPSecure = 'tls';
                     $mail->Port       = 587;
 
                     // Recipients
                     $mail->setFrom($email, $name);
-                    $mail->addAddress('adamrizal.dev@gmail.com', 'CarRental Admin');
+                    $mail->addAddress('your@gmail', 'CarRental Admin');
 
                     // Content
                     $mail->isHTML(true);
