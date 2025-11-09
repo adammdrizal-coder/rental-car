@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <?php
+
+        require_once '../component/function.php';
+
+        
+        require_once('../component/config.php');
+
+        $data = rental($pdo);
+
+        // // Contoh query 1 data
+        // $stmt = $pdo->prepare($data);
+        // $stmt->execute();
+
+        // // Fetch 1 row sahaja sebagai associative array
+        // $data = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        
+    ?>
+
     <title>Rental Packages</title>
 </head>
 <body>
 
     <div class="container max-w-full min-h-screen bg-black">
     
-    <header class="bg-black text-neutral-200 p-3 pt-6 text-md">
-        <nav>
-            <div class="navbar flex justify-around">
+    <?php
 
-                <span class="cursor-pointer"><img src="/images/logo.png" alt="" width="130"></span>
+        require_once '../component/nav.php';
 
-                <ul class="lg:flex space-x-10 hidden">
-                    <li><a href="/index.html" class=" hover:text-neutral-300">Home</a></li>
-                    <li><a href="/cars.html" class="hover:text-neutral-300">Cars</a></li>
-                    <li><a href="/rental.html" class="active text-teal-300">Rental Packages</a></li>
-                    <li><a href="/about.html" class="hover:text-neutral-300">About</a></li>
-                    <li><a href="/contact.html" class="hover:text-neutral-300">Contact</a></li>
-                </ul>
-
-                <span>
-                    
-                    <button class="p-1 px-3 rounded-md bg-neutral-900"><a href="#"><i class="fa fa-user-plus mr-2" aria-hidden="true"></i>Login</a></button>
-                    <button class="border p-1 px-5 rounded-md bg-teal-300 text-black font-semibold"><a href="#">Register</a></button>
-                
-                </span>
-
-            </div>
-        </nav>
-        </header>
+    ?>
 
         <div class="child-container flex items-center justify-center max-w-full min-h-170">
 
@@ -47,28 +44,39 @@
         </div>
         </div>
         <div class="img w-1/2 flex justify-center hidden md:block">
-            <img src="/images/rental-packages-main.png" alt="" class="h-70">
+            <img src="/CarRental/images/rental-packages-main.png" alt="" class="h-70">
         </div>
 
         </div>
         </div>
 
         <div class="card-packages max-w-full min-h-screen bg-black text-white flex items-center justify-center">
+
+
             <main class="grid grid-rows-1 md:grid-cols-3 gap-10">
+
+            <?php  foreach ($data as $rent) {  ?>
                 <article class="w-80 bg-neutral-800 p-10 rounded-xl hover:shadow-xl shadow-neutral-700/100">
 
                 <div class="icon w-full text-center text-xl">
                     <i class="fa fa-calendar-o bg-teal-300 p-3 rounded-full text-teal-900" aria-hidden="true"></i>
                 </div>
                     <div class="text">
-                        <h1 class="text-2xl font-semibold text-center my-5">Daily Rental</h1>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit.</p>
-                        <h2 class="text-2xl font-semibold my-15 text-center">$29/day</h2>
+                        <h1 class="text-2xl font-semibold text-center my-5"><?php echo $rent["package_name"] ?></h1>
+                        <p class="text-center"><?php echo $rent["details"] ?></p>
+                        <h2 class="text-2xl font-semibold my-15 text-center">$<?php echo $rent["price"] ?>/day</h2>
                         <button class="w-full bg-teal-300 rounded-xl p-2"><a href="#" class="text-black">Choose Package</a></button>
                     </div>
 
                 </article>
-                <article class="w-80 bg-neutral-800 p-10 rounded-xl hover:shadow-xl shadow-neutral-700/100">
+
+            <?php
+
+
+            }
+
+            ?>
+                <!-- <article class="w-80 bg-neutral-800 p-10 rounded-xl hover:shadow-xl shadow-neutral-700/100">
 
                 <div class="icon w-full text-center text-xl">
                     <i class="fa fa-calendar-o bg-teal-300 p-3 rounded-full text-teal-900" aria-hidden="true"></i>
@@ -93,9 +101,13 @@
                         <button class="w-full bg-teal-300 rounded-xl p-2"><a href="#" class="text-black">Choose Package</a></button>
                     </div>
 
-                </article>
+                </article> -->
             </main>
-        </div>
+
+
+
+            </div>
+
 
 </body>
 </html>
